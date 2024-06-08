@@ -62,14 +62,14 @@ const reversed = Object.entries(crypt).reduce(
   {}
 );
 
-// encrypting from english to morse code
+// encriptando español a morse
 function encrypt() {
   let answerMorse = "";
-  let english = $("#english").val().toUpperCase();
+  let español = $("#español").val().toUpperCase();
 
-  for (let i = 0; i < english.length; i++) {
-    if (english[i] != " ") {
-      answerMorse += crypt[english[i]];
+  for (let i = 0; i < español.length; i++) {
+    if (español[i] != " ") {
+      answerMorse += crypt[español[i]];
     }
 
     answerMorse += " ";
@@ -78,9 +78,9 @@ function encrypt() {
   $("#answerMorse").val(answerMorse);
 }
 
-// decrypting from morse code to english
+// desencriptando morse a español
 function decrypt() {
-  let answerEnglish = "";
+  let answerEspañol = "";
   let morse = $("#morse").val();
 
   // just if somebody used '_' instead of '-'
@@ -90,13 +90,13 @@ function decrypt() {
 
   for (let i = 0; i < morse.length; i++) {
     if (morse[i] == "/") {
-      answerEnglish += " ";
+      answerEspañol += " ";
     } else if (morse[i] == " " || morse[i] == "") {
       continue;
     } else {
-      answerEnglish += reversed[morse[i]];
+      answerEspañol += reversed[morse[i]];
     }
   }
 
-  $("#answerEnglish").val(answerEnglish);
+  $("#answerEspañol").val(answerEspañol);
 }
