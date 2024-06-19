@@ -20,7 +20,13 @@ button {
 }
 
 body {
-  background-color: #00ffc857;
+
+  background-image: url(fondo.jpg);
+  background-position-x: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+
 }
 
 body:before {
@@ -30,7 +36,7 @@ body:before {
   top: -10%;
   height: 100%;
   opacity: 0.04;
-  background-image: url(/images/texture.svg);
+  
   background-repeat: no-repeat;
   background-size: cover;
 }
