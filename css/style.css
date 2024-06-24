@@ -1,10 +1,11 @@
-@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@200;400;500;700&display=swap");
-
+@import url("https: //fonts.googleapis.com/css2?family=Meddon&display=swap");
 * {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
-  font-family: "IBM Plex Sans", sans-serif;
+  font-family: "Meddon", cursiva;
+  font-size: 400;
+  font-style: normal;
 }
 
 textarea,
@@ -59,9 +60,15 @@ main {
   padding: 0 5% 5%;
 }
 
+.logo{
+  width: 300px;
+  height: 200px;
+}
+
 h1 {
-  font-size: 50px;
+  font-size: 75px;
   margin: 0 2% 2%;
+
 }
 
 h2 {
@@ -75,13 +82,18 @@ h3 {
 h1,
 h2,
 h3 {
-  color: #247881;
+  color: #2E1503;
   text-align: center;
 }
 
 h2,
 h3 {
   margin: 5% 0 2%;
+}
+
+.Letra {
+  font-size: 30px;
+  text-align: center;
 }
 
 p {
@@ -124,7 +136,7 @@ input {
 input,
 textarea {
   text-align: left;
-  background-color: #43919b;
+  background-color: #744c24;
   color: white;
 }
 
@@ -133,10 +145,10 @@ button {
   border: none;
   margin-bottom: 5%;
   padding: 2%;
-  background-color: #247881;
+  background-color: #2E1503;
   color: white;
 }
 
 button:hover {
-  background-color: #5ecdda;
+  background-color: #9b6b43;
 }

@@ -82,8 +82,6 @@ function encrypt() {
 function decrypt() {
   let answerEspañol = "";
   let morse = $("#morse").val();
-
-  // just if somebody used '_' instead of '-'
   morse = morse.replaceAll("_", "-");
   morse = morse.replaceAll("  ", " / ");
   morse = morse.split(" ");
