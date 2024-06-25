@@ -5,60 +5,70 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+
+    <!-- Icono del sitio -->
     <link rel="icon" type="image/x-icon" href="images/logo.svg">
+    <!-- Enlace a la hoja de estilos CSS -->
     <link rel="stylesheet" href="css/style.css">
 
     <title>Codificador de Español a Codigo Morse</title>
 </head>
+
+<!-- Estilo para el fondo de la página -->
 <style>
     body {
-        background-image: url('images/fondo.jpg'); /* Asegúrate de que la ruta a la imagen sea correcta */
-        background-size: cover; /* Ajusta la imagen para que cubra todo el fondo */
-        background-repeat: no-repeat; /* Evita que la imagen se repita */
-        background-attachment: fixed; /* Hace que la imagen se quede fija al hacer scroll */
+        background-image: url('images/fondo.jpg');
+        background-size: cover;
+        /* Ajusta la imagen para que cubra todo el fondo */
+        background-repeat: no-repeat;
+        /* Evita que la imagen se repita */
+        background-attachment: fixed;
+        /* Hace que la imagen se quede fija al hacer scroll */
     }
 </style>
 
 <body>
     <header>
-        <img class="logo" src="images/logo3.png" alt="logo">
+        <img class="logo" src="images/logo3.png" alt="logo"> <!-- Logo del sitio -->
         <h1>Codigo Morse</h1>
     </header>
     <main>
-        
+        <!-- Contenedor principal -->
         <div class="container">
+            <!-- Sección izquierda -->
             <div class="left">
                 <p class="Letra">Cifra y Descifra del español al código morse y viceversa.</p>
             </div>
+            <!-- Sección derecha -->
             <div class="right">
                 <h2>Caracteres que soporta</h2>
-                <p>Soporta todo el <span> alfabeto Español </span>, todo <span> numero </span> y tambien <span> caracteres especiales </span> como son : . , "," , ? , ' , ! , / , ( , ) , & , : , ; , = , + , - , _ , " , $ , @</p>
+                <p>Soporta todo el <span>alfabeto Español</span>, todo <span>número</span> y también <span>caracteres
+                        especiales</span> como son: . , "," , ? , ' , ! , / , ( , ) , & , : , ; , = , + , - , _ , " , $
+                    , @</p>
             </div>
         </div>
         <div class="container">
-            <!-- español to morse code translator  -->
+            <!-- Sección para encriptar texto en español a código Morse -->
             <div class="left">
                 <h3>Español a Codigo Morse</h3>
-                <input type="text" id="español">
-                <button onclick="encrypt()">ENCRIPTAR</button>
+                <input type="text" id="español"> <!-- Campo de entrada para texto en español -->
+                <button onclick="encrypt()">ENCRIPTAR</button> <!-- Botón para encriptar -->
                 <textarea id="answerMorse" cols="30" rows="10"></textarea>
+                <!-- Área de texto para mostrar el resultado en Morse -->
             </div>
 
-            <!-- morse code to español translator -->
+            <!-- Sección para desencriptar código Morse a texto en español -->
             <div class="right">
                 <h3>Codigo Morse a Español</h3>
-                <input type="text" id="morse">
-                <button onclick="decrypt()">DESCENCRIPTAR</button>
+                <input type="text" id="morse"> <!-- Campo de entrada para texto en Morse -->
+                <button onclick="decrypt()">DESCENCRIPTAR</button> <!-- Botón para desencriptar -->
                 <textarea id="answerEspañol" cols="30" rows="10"></textarea>
+                <!-- Área de texto para mostrar el resultado en español -->
             </div>
         </div>
     </main>
 </body>
-<!-- jquery -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-
-<!-- custom js  -->
+<!-- Inclusión de script personalizado -->
 <script src="js/script.js"></script>
 
 </html>
